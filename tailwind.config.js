@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-content: [
-  "./src/**/*.{html,js}",
-  "./public/**/*.{html,js}", // если у вас есть папка public
-  "./**/*.html", // для всех html файлов в проекте
-  "./**/*.js" // для всех js файлов в проекте
-],
+  content: [
+    "./src/**/*.{html,js}",
+    "./public/**/*.{html,js}",
+    "./index.html" // если есть файл index.html в корне
+  ],
   theme: {
     extend: {
         keyframes: {

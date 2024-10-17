@@ -2,7 +2,10 @@
 
 module.exports = {
 content: [
-  "./**/*.{html,js}",
+  "./src/**/*.{html,js}",
+  "./public/**/*.{html,js}", // если у вас есть папка public
+  "./**/*.html", // для всех html файлов в проекте
+  "./**/*.js" // для всех js файлов в проекте
 ],
   theme: {
     extend: {

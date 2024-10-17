@@ -35,37 +35,95 @@
 
 <body class="font-sans bg-gray-100 text-gray-900">
 
-    <!-- Шапка сайта -->
-    <header class="bg-white shadow p-6">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="logo.png" alt="Логотип" class="h-10 mr-3">
-                <h1 class="text-2xl font-bold">Адвокат</h1>
+    <!-- Header -->
+    <header class="bg-primary text-white">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="text-2xl font-bold">
+                    <a href="#">logo</a>
+                </div>
+
+                <!-- Menu Button for Mobile -->
+                <div class="block lg:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu for Desktop -->
+                <nav class="hidden font-semibold lg:flex space-x-8">
+                    <a href="#" class="hover:underline">О компании </a>
+                    <a href="#" class="hover:underline">Юридические<br>
+                        услуги</a>
+                    <a href="#" class="hover:underline">Комплексное<br>
+                        cопровождение</a>
+                    <a href="#" class="hover:underline">Отзывы</a>
+                    <a href="#" class="hover:underline">Контакты</a>
+                    <div class="flex space-x-4 items-center">
+                        <a href="https://telegram.me/yourlink" target="_blank">
+                            <img src="images/telegram.png" alt="Telegram" class="w-6 h-6">
+                        </a>
+                        <a href="mailto:your-email@example.com" target="_blank">
+                            <img src="images/mail.png" alt="Mail" class="w-6 h-6">
+                        </a>
+                        <a href="https://wa.me/your-phone-number" target="_blank">
+                            <img src="images/wa.png" alt="WhatsApp" class="w-6 h-6">
+                        </a>
+                    </div>
+                </nav>
+
+                
             </div>
-            <nav class="space-x-6">
-                <a href="#about" class="text-lg text-gray-700 hover:text-gray-900">О компании</a>
-                <a href="#services" class="text-lg text-gray-700 hover:text-gray-900">Юридические услуги</a>
-                <a href="#comprehensive" class="text-lg text-gray-700 hover:text-gray-900">Комплексное сопровождение</a>
-                <a href="#prices" class="text-lg text-gray-700 hover:text-gray-900">Стоимость услуг</a>
-                <a href="#reviews" class="text-lg text-gray-700 hover:text-gray-900">Отзывы</a>
-                <a href="#contacts" class="text-lg text-gray-700 hover:text-gray-900">Контакты</a>
+
+            <!-- Mobile Menu -->
+            <nav id="mobile-menu" class="hidden lg:hidden space-y-2">
+                <a href="#" class="block px-4 py-2 hover:bg-blue-700">Юридические<br>
+                    услуги </a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-700">Комплексное<br>
+                    cопровождение</a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-700">Отзывы</a>
+                <a href="#" class="block px-4 py-2 hover:bg-blue-700">Контакты</a>
+                <div class="flex space-x-4">
+                    <a href="https://telegram.me/yourlink" target="_blank">
+                        <img src="images/telegram.png" alt="Telegram" class="w-6 h-6">
+                    </a>
+                    <a href="mailto:your-email@example.com" target="_blank">
+                        <img src="images/mail.png" alt="Mail" class="w-6 h-6">
+                    </a>
+                    <a href="https://wa.me/your-phone-number" target="_blank">
+                        <img src="images/wa.png" alt="WhatsApp" class="w-6 h-6">
+                    </a>
+                </div>
             </nav>
-            <div class="flex space-x-4">
-                <a href="tel:+71234567890" class="bg-green-500 text-white px-4 py-2 rounded">Позвонить</a>
-                <a href="#consultation" class="bg-blue-500 text-white px-4 py-2 rounded">Бесплатная консультация</a>
-            </div>
         </div>
     </header>
 
+
+    <script>
+        // Toggle mobile menu
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
     <!-- Приветственный баннер -->
-    <section class="bg-blue-600 text-white py-20 text-center">
-        <h2 class="text-4xl font-bold">Юридическая помощь для физических и юридических лиц</h2>
-        <p class="mt-4 text-xl">Профессиональные консультации и комплексное сопровождение по правовым вопросам</p>
-        <div class="mt-8">
-            <a href="https://wa.me/1234567890" class="bg-green-500 px-6 py-3 rounded text-white">Связаться по
-                WhatsApp</a>
-            <a href="https://t.me/username" class="bg-blue-500 px-6 py-3 rounded text-white ml-4">Связаться по
-                Telegram</a>
+    <section class="bg-accent h-screen text-white py-20 text-center flex flex-row justify-center items-center">
+        <div class="flex flex-col align-center">
+            <h2 class="text-8xl font-bold text-left">Алатея</h2>
+            <p class="mt-4 text-2xl md:text-3xl text-left">Индивидуальное и комплексное<br>
+                предоставление юридических услуг <br>
+                для физических и юридических лиц
+            <div class="mt-8">
+                <a href="https://t.me/username" class="bg-primary px-6 py-3 rounded text-white ml-4">Бесплатная консультация</a>
+            </div>
         </div>
     </section>
 

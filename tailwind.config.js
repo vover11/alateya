@@ -2,19 +2,33 @@
 
 module.exports = {
   content: [
-    './src/**/*.{html,js,jsx,ts,tsx}', // Пути к файлам
-    './public/index.html',              // Можно добавить другие пути к файлам
+    "./src/**/*.{html,js}",
   ],
   theme: {
     extend: {
+        keyframes: {
+          spinLeft: {
+            '0%': { transform: 'rotate(0deg)' },
+            '100%': { transform: 'rotate(-360deg)' },
+          },
+          spinRight: {
+            '0%': { transform: 'rotate(0deg)' },
+            '100%': { transform: 'rotate(360deg)' },
+          },
+        },
+        animation: {
+          spinLeft: 'spinLeft 10s linear infinite',
+          spinRight: 'spinRight 10s linear infinite',
+        },
+
       colors: {
-        primary: '#1137c6',  // Основной синий цвет
-        secondary: '#64748B',  // Вторичный серо-синий
-        accent: '#DD637C',  // Акцентный оранжевый
+        primary: '#00337D',  // Основной синий цвет
+        secondary: '#003F2C',  // Вторичный серо-синий
+        accent: '#003F2C',  // Акцентный оранжевый
         background: '#F1F5F9',  // Цвет фона
         surface: '#FFFFFF',  // Белый для поверхностей
         error: '#EF4444',  // Красный для ошибок
-        success: '#00ff85',  // Зеленый для успеха
+        success: '#00FF85',  // Зеленый для успеха
         warning: '#F59E0B',  // Желтый для предупреждений
         info: '#3B82F6',  // Голубой для информационных сообщений
         'custom-hover': '#0d0d0d', // Ваш кастомный цвет
@@ -113,11 +127,12 @@ module.exports = {
           DEFAULT: '0rem',
           sm: '0rem',
           md: '4rem',
-          lg: '6rem',
+          lg: '0rem',
           xl: '0rem',
         },
         screens: {
-          'xl': '1780px',
+          DEFAULT: '1920px',
+          'xl': '1920px',
           '2xl': '1920px',
         },
       },

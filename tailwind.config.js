@@ -3,6 +3,7 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
+    "./{html,js}",
     "./public/**/*.{html,js}",
     "./index.html" // если есть файл index.html в корне
   ],
@@ -30,8 +31,8 @@ module.exports = {
         background: '#F1F5F9',  // Цвет фона
         surface: '#FFFFFF',  // Белый для поверхностей
         error: '#EF4444',  // Красный для ошибок
-        success: '#00FF85',  // Зеленый для успеха
-        warning: '#F59E0B',  // Желтый для предупреждений
+        success: '#800020',  // Зеленый для успеха
+        warning: '#262626',  // Желтый для предупреждений
         info: '#3B82F6',  // Голубой для информационных сообщений
         'custom-hover': '#0d0d0d', // Ваш кастомный цвет
       },
@@ -97,6 +98,7 @@ module.exports = {
         '320': '80rem',  // 1280px
       },
       fontFamily: {
+        'great-vibes': ['Great Vibes', 'cursive'],
         sans: ['Inter', 'system-ui', 'sans-serif'],  // Основной шрифт
         serif: ['Merriweather', 'serif'],  // Альтернативный шрифт для заголовков
         mono: ['Menlo', 'monospace'],  // Моноширинный шрифт
@@ -113,6 +115,7 @@ module.exports = {
         '5xl': '3rem',  // 48px
         '6xl': '3.75rem',  // 60px
         '7xl': '4.5rem',  // 72px
+        '8xl': '5.5rem',  // 72px
       },
       borderRadius: {
         'none': '0',

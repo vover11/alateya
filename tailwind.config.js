@@ -3,9 +3,10 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js}",
-    "./{html,js}",
     "./public/**/*.{html,js}",
-    "./index.html" // если есть файл index.html в корне
+    "./index.html", // если есть файл index.html в корне
+    "./*.html",     // для всех HTML файлов в корне
+    "./*.js"        // для всех JS файлов в корне
   ],
   theme: {
     extend: {

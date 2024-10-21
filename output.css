@@ -622,6 +622,18 @@ video {
   margin: 3px;
 }
 
+.m-4 {
+  margin: 16px;
+}
+
+.m-1 {
+  margin: 4px;
+}
+
+.m-2 {
+  margin: 8px;
+}
+
 .mx-2 {
   margin-left: 8px;
   margin-right: 8px;
@@ -871,6 +883,12 @@ video {
   margin-bottom: calc(8px * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(32px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(32px * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1053,6 +1071,11 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.py-8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1150,6 +1173,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-50 {

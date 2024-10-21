@@ -29,6 +29,8 @@
     <!-- CSS Link -->
     <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+
 
     <!-- Tailwind CSS (если нужно) -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -117,15 +119,15 @@
     <!-- Приветственный баннер -->
     <section class="bg-accent h-screen text-white py-20 text-center flex flex-row justify-center items-center">
         <div class="p-2 flex flex-col align-center">
-            <h2 class="text-9xl md:text-9xl text-left font-great-vibes">Алатея</h2>
+            <h2 class="text-6xl md:text-9xl text-left font-alumni-sans font-semibold">Алатея</h2>
             <p class="mt-4 text-xl md:text-3xl text-left">
                 Индивидуальное и комплексное<br>
                 предоставление юридических услуг <br>
                 для физических и юридических лиц
             </p>
             <div class="mt-8 flex flex-row justify-end">
-                <button id="consultationButton"
-                    class="hover:bg-[#2449FF] active:bg-[#2449FF] bg-primary px-6 py-3 rounded text-white ml-4">Бесплатная
+                <button id=""
+                    class="consultation-button hover:bg-[#2449FF] active:bg-[#2449FF] bg-primary px-6 py-3 rounded text-white ml-4">Бесплатная
                     консультация</button>
             </div>
         </div>
@@ -133,7 +135,7 @@
 
     <section class="px-2 h-auto md:h-192 mt-60 sm:mt-60 md:mt-28 lg:mt-36 flex items-center justify-center">
         <div class="container">
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
                 <div class="relative rounded-md h-72 md:h-96 flex flex-col justify-between overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#00337D] to-[#FF9500] rounded-md"></div>
                     <div class="relative bg-warning rounded-md m-[3px] flex-grow flex flex-col justify-between">
@@ -187,90 +189,191 @@
 
 
 
-    <!-- О компании -->
-    <section id="about" class="px-2 py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-left">О компании</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Юридическая компания «Адвокат» - объединение специалистов, имеющих многолетний опыт работы в различных
-                областях права.
-                Основным регионом деятельности является Москва и Московская область. Мы работаем как с частными, так и с
-                юридическими лицами,
-                предоставляя разовые услуги и комплексное сопровождение. Наши специалисты всегда объяснят из чего
-                формируется стоимость
-                оказанных услуг и обсудят возможность их корректировки.
-            </p>
-        </div>
-    </section>
+    <section class="py-4 px-2 mb-56">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Левый контейнер с изображением -->
+                <div class="relative h-192 rounded-lg overflow-hidden p-4"> <!-- Добавлены отступы для контейнера -->
+                    <div class="absolute inset-0 bg-gradient-to-l from-primary to-warning"></div>
 
-    <!-- Юридические услуги -->
-    <section id="services" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-left">Юридические услуги</h2>
-            <div class="space-y-6">
-                <div>
-                    <button class="text-xl font-semibold text-left w-full text-blue-600">Консультация юриста</button>
-                    <p class="mt-2 text-gray-700">Консультация по любым юридическим вопросам.</p>
+                    <!-- Контейнер для изображения, который использует flex для центрирования -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <img src="images/save.png" alt="Save" class="max-w-full max-h-full object-contain opacity-50" />
+                    </div>
+
+                    <div class="relative z-10 flex flex-col justify-between h-full">
+                        <!-- Используем flex для вертикального распределения -->
+
+                        <div class="">
+                            <p class="text-white text-4xl md:text-6xl px-4"> <!-- Описание -->
+                                О компании
+                            </p>
+                            <!-- Верхний параграф -->
+                            <p class="text-white text-lg px-4"> <!-- Описание -->
+                                Юридическая компания «Алатея»<br />
+                                - объединение специалистов, имеющих многолетний опыт работы<br />
+                                в различных областях права.
+                            </p>
+                        </div>
+
+                        <!-- Нижний параграф -->
+                        <p class="text-white text-lg px-4 mt-2"> <!-- Дополнительная информация -->
+                            Основными приоритетами нашей компании являются индивидуальный подход к каждому
+                            клиенту,<br />
+                            конфиденциальность, ориентированность на результат, оперативное решение вопросов клиента.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <button class="text-xl font-semibold text-left w-full text-blue-600">Составление договоров, писем,
-                        жалоб</button>
-                    <p class="mt-2 text-gray-700">В том числе договорная работа между гражданами и организациями.</p>
+
+
+
+                <!-- Правый контейнер -->
+                <div class="grid grid-cols-1 h-192 gap-4">
+                    <div class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4">
+                        <!-- Добавлен отступ и выравнивание -->
+                        <h3 class="text-white text-xl">
+                            Основным регионом деятельности компании является г. Москва и Московская область. <br>
+                            При этом наши специалисты имеют опыт оказания услуг в различных регионах
+                            Российской Федерации. Компания работает как с частными, так и с юридическими лицами,
+                            оказывает разовые услуги и комплексное
+                            сопровождение деятельности физических и юридических лиц.
+                        </h3>
+                    </div>
+                    <div class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4">
+                        <!-- Добавлен отступ и выравнивание -->
+                        <h3 class="text-white text-xl">
+                            Специалисты нашей компании всегда объяснят из чего формируется
+                            стоимость оказанных услуг, пришлют проект заключаемого договора,
+                            разъяснят нужные пункты, обсудят возможность их корректировки, при необходимости подпишут
+                            соглашение о неразглашении информации.
+                        </h3>
+                    </div>
                 </div>
-                <!-- Добавьте другие услуги по аналогии -->
+
             </div>
         </div>
     </section>
 
-    <!-- Комплексное сопровождение -->
-    <section id="comprehensive" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-left">Комплексное сопровождение</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Наша компания предлагает комплексное юридическое сопровождение для физических и юридических лиц. Это
-                выгодная альтернатива штатным юристам.
-            </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+        <!-- Карточки с услугами -->
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Консультация юриста</h3>
+            <button id=""
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
         </div>
-    </section>
-
-    <!-- Стоимость услуг -->
-    <section id="prices" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Стоимость услуг</h2>
-            <table class="w-full text-left table-auto">
-                <thead>
-                    <tr>
-                        <th class="px-4 py-2">Услуга</th>
-                        <th class="px-4 py-2">Цена</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border px-4 py-2">Консультация юриста</td>
-                        <td class="border px-4 py-2">Бесплатно</td>
-                    </tr>
-                    <tr>
-                        <td class="border px-4 py-2">Составление договоров</td>
-                        <td class="border px-4 py-2">от 15000 рублей</td>
-                    </tr>
-                    <!-- Добавьте другие услуги по аналогии -->
-                </tbody>
-            </table>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Составление договоров</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
         </div>
-    </section>
-
-    <!-- Социальная ориентированность -->
-    <section id="social" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Социальная ориентированность</h2>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                Мы предлагаем скидки инвалидам, пенсионерам и многодетным семьям на юридические услуги. Воспользуйтесь
-                скидкой до 20% при предъявлении соответствующих документов.
-            </p>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Составление писем</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
         </div>
-    </section>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Правовая оценка документов</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Составление исков</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Досудебное урегулирование</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Представительство в суде</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Представление интересов</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Банкротство физических лиц</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Банкротство юридических лиц</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Представление интересов физического лица по делу об
+                административном правонарушении</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">Представление интересов юридического лица по делу об
+                административном правонарушении</h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
+        <div
+            class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
+            <h3 class="text-lg text-white font-semibold">
+                Представление интересов доверителя в правоотношениях с контрагентами, страховыми компаниями, в различных
+                государственных органах и учреждениях
+            </h3>
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+                заявку</button>
+        </div>
 
-    <!-- Отзывы -->
+        <!-- Рекламный баннер -->
+        <div
+            class="bg-gradient-to-r from-primary to-warning p-4 shadow-md rounded-lg h-auto w-full flex flex-col sm:flex-row items-center justify-between sm:col-span-2 lg:col-span-3">
+            <div class="text-white text-left">
+                <h3 class="text-4xl font-semibold">Социальная ориентированность</h3>
+                <p class="mt-2">
+                    Мы предлагаем скидки на юридические услуги инвалидам, пенсионерам и многодетным семьям.
+                </p>
+                <p class="mt-4 font-bold">
+                    Воспользуйтесь скидкой до 20% при предъявлении соответствующих документов.
+                </p>
+            </div>
+            <img src="images/elderly.png" alt="Elderly"
+                class="h-40 w-auto mb-4 mt-4 sm:mt-0 sm:mb-0 sm:mr-4 order-1 sm:order-none" />
+        </div>
+
+    </div>
+
+
+
+    <!-- Отзывы
     <section id="reviews" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold mb-8 text-center">Отзывы</h2>
@@ -286,11 +389,11 @@
                 <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Отправить отзыв</button>
             </form>
         </div>
-    </section>
+    </section> -->
 
 
 
-    <section id="contact-section" class="h-full md:h-192 mt-20 flex flex-col md:flex-row gap-1 ">
+    <section id="contact-section" class="h-full md:h-192 mt-20 flex flex-col md:flex-row gap-4 ">
         <div class="feedback_form w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning">
             <form id="myForm" class="w-full p-2 rounded-md h-full">
                 <p class="font-regular text-left text-white text-3xl 2xl:text-7xl z-10 mb-2">
@@ -339,14 +442,16 @@
 
                 <!-- Заголовок с навигацией по месяцам -->
                 <div class="absolute bottom-2 left-2 flex justify-end items-center gap-2 mt-8">
-                    <button id="prevMonth" class="bg-primary text-white w-16 h-16 rounded-full hover:bg-blue-700 flex justify-center items-center"">
-                        <img src="images/left.png" alt="Предыдущий месяц" class="w-8 h-8">
+                    <button id="prevMonth"
+                        class="bg-primary text-white w-16 h-16 rounded-full hover:bg-blue-700 flex justify-center items-center"">
+                        <img src=" images/left.png" alt="Предыдущий месяц" class="w-8 h-8">
                     </button>
-                    <button id="nextMonth" class="bg-primary text-white w-16 h-16 rounded-full hover:bg-blue-700 flex justify-center items-center">
+                    <button id="nextMonth"
+                        class="bg-primary text-white w-16 h-16 rounded-full hover:bg-blue-700 flex justify-center items-center">
                         <img src="images/right.png" alt="Следующий месяц" class="w-8 h-8">
                     </button>
                 </div>
-                <script type="module" src="calendar.js"></script>
+                <script src="calendar.js"></script>
             </div>
         </div>
     </section>
@@ -388,23 +493,26 @@
     </footer>
 
     <script>
-        // Получаем элементы
-        const consultationButton = document.getElementById('consultationButton');
+        // Получаем все кнопки
+        const consultationButtons = document.querySelectorAll('.consultation-button');
         const calendarContainer = document.getElementById('calendarContainer');
 
-        // Добавляем обработчик события клика
-        consultationButton.addEventListener('click', (event) => {
-            event.preventDefault(); // Отменяем стандартное поведение кнопки
-            // calendarContainer.style.display = 'block'; // Показываем календарь
-            if (calendarContainer) {
-                calendarContainer.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                console.error("Element #calendarContainer not found");
-            }
+        // Добавляем обработчик события клика ко всем кнопкам
+        consultationButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault(); // Отменяем стандартное поведение кнопки
 
-
+                // Показываем календарь
+                if (calendarContainer) {
+                    calendarContainer.scrollIntoView({ behavior: 'smooth' });
+                    calendarContainer.style.display = 'block'; // Показываем календарь
+                } else {
+                    console.error("Element #calendarContainer not found");
+                }
+            });
         });
     </script>
+
 
 </body>
 

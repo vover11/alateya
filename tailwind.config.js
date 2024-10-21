@@ -100,6 +100,7 @@ module.exports = {
       },
       fontFamily: {
         'great-vibes': ['Great Vibes', 'cursive'],
+        'alumni-sans': ['Alumni Sans SC', 'sans-serif'], // Новый шрифт
         sans: ['Inter', 'system-ui', 'sans-serif'],  // Основной шрифт
         serif: ['Merriweather', 'serif'],  // Альтернативный шрифт для заголовков
         mono: ['Menlo', 'monospace'],  // Моноширинный шрифт

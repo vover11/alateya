@@ -824,6 +824,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-2 {
   gap: 8px;
 }
@@ -1080,6 +1084,10 @@ video {
   font-size: 1.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1318,6 +1326,10 @@ video {
   .md\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
   }
 }
 

@@ -36,7 +36,7 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 
-<body class="font-sans bg-warning text-gray-900">
+<body class="font-sans bg-warning text-gray-900 ">
 
     <!-- Header -->
     <header class="bg-primary text-white">
@@ -410,11 +410,12 @@
                             <p class="text-sm text-white">Банкротство юридических лиц</p>
                         </div>
                         <p class="mt-4 text-white">
-                            "Профессиональная команда! Решили все вопросы с банкротством нашей компании быстро и качественно. Рекомендую!"
+                            "Профессиональная команда! Решили все вопросы с банкротством нашей компании быстро и
+                            качественно. Рекомендую!"
                         </p>
                     </div>
                 </div>
-        
+
                 <!-- Отзыв Людмилы -->
                 <div class="relative rounded-md h-96 flex flex-col justify-between overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#00337D] to-[#FF9500] rounded-md"></div>
@@ -424,11 +425,12 @@
                             <p class="text-sm text-white">Консультация юриста</p>
                         </div>
                         <p class="mt-4 text-white">
-                            "Юрист очень внимательный и компетентный. Получила исчерпывающую консультацию, теперь точно знаю, как действовать!"
+                            "Юрист очень внимательный и компетентный. Получила исчерпывающую консультацию, теперь точно
+                            знаю, как действовать!"
                         </p>
                     </div>
                 </div>
-        
+
                 <!-- Отзыв Анастасии -->
                 <div class="relative rounded-md h-96 flex flex-col justify-between overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#00337D] to-[#FF9500] rounded-md"></div>
@@ -438,11 +440,12 @@
                             <p class="text-sm text-white">Досудебные споры</p>
                         </div>
                         <p class="mt-4 text-white">
-                            "Благодаря грамотной консультации, нам удалось избежать судебных тяжб. Огромное спасибо за профессионализм и поддержку!"
+                            "Благодаря грамотной консультации, нам удалось избежать судебных тяжб. Огромное спасибо за
+                            профессионализм и поддержку!"
                         </p>
                     </div>
                 </div>
-        
+
                 <!-- Дополнительный отзыв -->
                 <div class="relative rounded-md h-96 flex flex-col justify-between overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-r from-[#00337D] to-[#FF9500] rounded-md"></div>
@@ -452,13 +455,14 @@
                             <p class="text-sm text-white">Комплексное сопровождение</p>
                         </div>
                         <p class="mt-4 text-white">
-                            "Получил полное юридическое сопровождение для бизнеса.  Все этапы работы выполнены на высшем уровне — теперь могу сосредоточиться на развитии!"
+                            "Получил полное юридическое сопровождение для бизнеса.  Все этапы работы выполнены на высшем
+                            уровне — теперь могу сосредоточиться на развитии!"
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
 
     </section>
@@ -466,7 +470,8 @@
 
 
     <section id="contact-section" class="h-full md:h-192 mt-56 flex flex-col md:flex-row gap-2 mx-2">
-        <div class="feedback_form rounded-md w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning border border-white">
+        <div
+            class="feedback_form rounded-md w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning border border-white">
             <form id="myForm" class="w-full p-2 rounded-md h-full">
                 <p class="font-regular text-left text-white text-4xl 2xl:text-7xl z-10 mb-4">
                     Бесплатная<br>
@@ -528,14 +533,18 @@
         </div>
     </section>
 
-    <button
-        class="footerbutton2 mt-2 mb-2  w-full relative inline-flex items-center justify-center text-sm font-medium text-gray-900 rounded-lg ">
-        <span
-            class=" w-full h-24 relative  transition-all ease-in duration-75 text-white font-semibold text-4xl bg-primary rounded-md group-hover:bg-opacity-0 flex flex-col justify-center">
-            связаться с нами
-        </span>
-        <img src="/images/Share.svg" alt="" srcset="">
-    </button>
+    <div class="container ">
+
+        <button
+            class="footerbutton2  mt-2 mb-2  w-full grid grid-cols-1 px-2 text-sm font-medium text-gray-900 rounded-lg">
+            <span
+                class="w-full h-24 transition-all ease-in duration-75 text-white font-semibold text-4xl bg-primary rounded-md group-hover:bg-opacity-0 flex flex-col justify-center">
+                связаться с нами
+            </span>
+            <img src="/images/Share.svg" alt="" srcset="">
+        </button>
+
+    </div>
 
     <script>
         document.querySelector('.footerbutton2').addEventListener('click', () => {
@@ -553,7 +562,7 @@
     </script>
 
     <!-- Подвал -->
-    <footer class="bg-primary text-white py-4">
+    <footer class="bg-primary text-white py-4 rounded-md">
         <div class="container mx-auto text-center">
             <p class="font-bold">
                 <a href="tel:+79095088990" class="text-blue-500 hover:underline">&phone; +7(909)508-89-90</a>

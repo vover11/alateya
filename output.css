@@ -618,6 +618,10 @@ video {
   order: 1;
 }
 
+.order-2 {
+  order: 2;
+}
+
 .col-span-7 {
   grid-column: span 7 / span 7;
 }

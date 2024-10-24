@@ -119,17 +119,19 @@
 
     <!-- Приветственный баннер -->
     <section class="bg-accent h-screen text-white py-20 text-center flex flex-row justify-center items-center">
-        <div class="p-2 flex flex-col align-center">
+        <div class="p-2 ">
             <h2 class="text-6xl md:text-9xl text-left font-alumni-sans font-semibold">Алатея</h2>
-            <p class="mt-4 text-white text-2xl 2xl:text-4xl text-left font-semibold">
+            <p class="text-white text-xl 2xl:text-4xl text-left font-semibold">
                 Индивидуальное и комплексное<br>
                 предоставление юридических услуг <br>
                 для физических и юридических лиц
             </p>
             <div class="mt-8 flex flex-row justify-end">
                 <button id="consultation-button"
-                    class="consultation-button text-white text-2xl bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2">Бесплатная
-                    консультация</button>
+                    class="consultation-button text-white text-lg bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg px-5 py-2.5 text-center">
+                    Бесплатная
+                    консультация
+                </button>
             </div>
         </div>
     </section>
@@ -205,7 +207,7 @@
                     <div class="relative z-10 flex flex-col justify-between h-full">
                         <!-- Используем flex для вертикального распределения -->
 
-                        <div class="">
+                        <div class="mt-8">
                             <p class="text-white text-4xl md:text-6xl px-4"> <!-- Описание -->
                                 О компании
                             </p>
@@ -218,7 +220,7 @@
                         </div>
 
                         <!-- Нижний параграф -->
-                        <p class="text-white text-xl px-4 mt-2"> <!-- Дополнительная информация -->
+                        <p class="text-white text-xl px-4 mt-2 mb-2"> <!-- Дополнительная информация -->
                             Основными приоритетами нашей компании являются<br> индивидуальный подход к каждому
                             клиенту, конфиденциальность,<br>
                             ориентированность на результат, оперативное решение вопросов клиента.
@@ -229,11 +231,11 @@
 
 
                 <!-- Правый контейнер -->
-                <div class="grid grid-cols-1 h-192 gap-4">
+                <div class="grid grid-cols-1 h-192 gap-2">
                     <div
-                        class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4 border-2 border-white">
+                        class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4 border border-white">
                         <!-- Добавлен отступ и выравнивание -->
-                        <h3 class="text-white text-xl">
+                        <h3 class="text-white text-lg md:text-xl">
                             Компания осуществляет свою деятельность в Москве и Московской области,
                             а также оказывает услуги в различных регионах России.
                             Мы работаем с частными и юридическими лицами, предоставляя
@@ -241,9 +243,9 @@
                         </h3>
                     </div>
                     <div
-                        class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4 border-2 border-white">
+                        class="bg-gradient-to-r from-primary to-warning rounded-lg flex items-end justify-start p-4 border border-white">
                         <!-- Добавлен отступ и выравнивание -->
-                        <h3 class="text-white text-xl">
+                        <h3 class="text-white text-lg md:text-xl">
                             Специалисты нашей компании всегда объяснят из чего формируется
                             стоимость оказанных услуг, пришлют проект заключаемого договора,
                             разъяснят нужные пункты, обсудят возможность их корректировки, при необходимости подпишут
@@ -256,13 +258,13 @@
         </div>
     </section>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-2">
         <!-- Карточки с услугами -->
         <div
             class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
             <h3 class="text-xl text-white font-semibold">Консультация юриста</h3>
-            <button id=""
-                class="consultation-button absolute bottom-4 right-4 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Оставить
+            <button
+                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
                 заявку</button>
         </div>
         <div
@@ -310,8 +312,8 @@
         <div
             class="bg-accent w-full p-4 shadow-md rounded-lg text-left h-96 relative hover:bg-[#01AC6A] transition duration-300">
             <h3 class="text-xl text-white font-semibold">Представление интересов</h3>
-            <button
-                class="consultation-button absolute bottom-4 right-4 bg-primary text-white font-bold py-2 px-4 rounded hover:bg-[#2449FF] transition duration-300 active:bg-[#2449FF]">Оставить
+            <button id=""
+                class="consultation-button absolute bottom-4 right-4 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 ">Оставить
                 заявку</button>
         </div>
         <div
@@ -357,7 +359,7 @@
 
         <!-- Рекламный баннер -->
         <div
-            class="border-2 border-white bg-gradient-to-r from-primary to-warning p-4 shadow-md rounded-lg h-auto w-full flex flex-col sm:flex-row items-center justify-around sm:col-span-2 lg:col-span-3">
+            class="border border-white bg-gradient-to-r from-primary to-warning p-4 shadow-md rounded-lg h-auto w-full flex flex-col sm:flex-row items-center justify-around sm:col-span-2 lg:col-span-3">
             <div class="text-white text-left">
                 <h3 class="text-4xl md:text-5xl font-semibold">Социальная ориентированность</h3>
                 <p class="mt-2 font-semibold">
@@ -464,7 +466,7 @@
 
 
     <section id="contact-section" class="h-full md:h-192 mt-56 flex flex-col md:flex-row gap-2 mx-2">
-        <div class="feedback_form rounded-md w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning border-2 border-white">
+        <div class="feedback_form rounded-md w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning border border-white">
             <form id="myForm" class="w-full p-2 rounded-md h-full">
                 <p class="font-regular text-left text-white text-4xl 2xl:text-7xl z-10 mb-4">
                     Бесплатная<br>
@@ -565,7 +567,7 @@
     <script>
         // Получаем все кнопки
         const consultationButtons = document.querySelectorAll('.consultation-button');
-        const calendarContainer = document.getElementById('calendarContainer');
+        const calendarContainer = document.getElementById('contact-section');
 
         // Добавляем обработчик события клика ко всем кнопкам
         consultationButtons.forEach(button => {

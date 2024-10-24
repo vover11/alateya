@@ -469,25 +469,25 @@
 
 
 
-    <section id="contact-section" class="h-full md:h-192 mt-56 flex flex-col md:flex-row gap-2 mx-2">
+    <section id="contact-section" class="h-full md:h-192 mt-56 grid grid-cols-1 md:grid-cols-2 gap-2 mx-2">
         <div
-            class="feedback_form rounded-md w-full md:w-1/2 h-192 md:h-full bg-gradient-to-r from-primary to-warning border border-white">
+            class="feedback_form rounded-md w-full md:w-full h-192 md:h-full bg-gradient-to-r from-primary to-warning border border-white">
             <form id="myForm" class="w-full p-2 rounded-md h-full">
                 <p class="font-regular text-left text-white text-4xl 2xl:text-7xl z-10 mb-4">
                     Бесплатная<br>
                     консультация
                 </p>
                 <input
-                    class="bg-primaryy-200 font-semibold text-black text-xl 2xl:text-5x border-2 border-white w-full p-2 mb-4 rounded-md"
+                    class="bg-primaryy-200 font-semibold text-black text-md 2xl:text-5x border-2 border-white w-full pt-4 pb-2 px-2 mb-4 rounded-md shadow-inner shadow-warning"
                     type="text" id="name" name="name" required placeholder="имя:" />
                 <input type="phone" id="phone" name="phone" required placeholder="телефон:"
-                    class="bg-primaryy-200 font-semibold text-black text-xl 2xl:text-5x border-2 border-white w-full p-2 mb-4 rounded-md" />
+                    class="bg-primaryy-200 font-semibold text-black text-md 2xl:text-5x border-2 border-white w-full pt-4 pb-2 px-2 mb-4 rounded-md shadow-inner shadow-warning" />
                 <input type="email" id="email" name="email" required placeholder="почта:"
-                    class="bg-primaryy-200 font-semibold text-blacke text-xl 2xl:text-5x border-2 border-white w-full p-2 mb-4 rounded-md" />
+                    class="bg-primaryy-200 font-semibold text-blacke text-md 2xl:text-5x border-2 border-white w-full pt-4 pb-2 px-2 mb-4 rounded-md shadow-inner shadow-warning" />
                 <textarea id="message" name="message" rows="4" cols="50" required placeholder="о вашем проекте:"
-                    class="bg-primaryy-200 font-semibold text-black text-xl 2xl:text-5x border-2 border-white w-full p-2 mb-4 rounded-md"></textarea>
+                    class="bg-primaryy-200 font-semibold text-black text-md 2xl:text-5x border-2 border-white w-full pt-4 pb-2 px-2 mb-4 rounded-md shadow-inner shadow-warning"></textarea>
                 <input type="text" id="selectedDate" name="selectedDate" placeholder="Выбранная дата"
-                    class="font-semibold text-black text-xl 2xl:text-5x p-2 mb-4 border border-gray-300 rounded"
+                    class="font-semibold text-black text-md 2xl:text-5x border-2 border-white w-full pt-4 pb-2 px-2 mb-4 rounded-md shadow-inner shadow-warning"
                     readonly />
                 <!-- <div id="optionWords" class="option-words-field mb-4"></div> -->
                 <!-- <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Отправить</button> -->
@@ -495,7 +495,7 @@
             <script src="telegram2.js"></script>
         </div>
 
-        <div class="p-2 bg-accent h-192 md:h-full  w-full md:w-1/2 feedback_form  rounded-md">
+        <div class="p-2 bg-accent h-192 md:h-full  w-full md:w-full feedback_form  rounded-md">
             <div class="container h-full mx-auto relative" id="calendarContainer">
                 <!-- <p class="text-white 2xl:text-2xl mt-8">
                     Выберите удобную дату, оставьте заявку,<br> и наши юристы свяжутся с вами <br> для бесплатной
@@ -538,7 +538,7 @@
         <button
             class="footerbutton2  mt-2 mb-2  w-full grid grid-cols-1 px-2 text-sm font-medium text-gray-900 rounded-lg">
             <span
-                class="w-full h-24 transition-all ease-in duration-75 text-white font-semibold text-4xl bg-primary rounded-md group-hover:bg-opacity-0 flex flex-col justify-center">
+                class="w-full h-24 transition-all ease-in duration-75 text-white font-semibold text-2xl md:text-4xl bg-primary rounded-md group-hover:bg-opacity-0 flex flex-col justify-center">
                 связаться с нами
             </span>
             <img src="/images/Share.svg" alt="" srcset="">
@@ -586,7 +586,7 @@
                 // Показываем календарь
                 if (calendarContainer) {
                     calendarContainer.scrollIntoView({ behavior: 'smooth' });
-                    calendarContainer.style.display = 'block'; // Показываем календарь
+
                 } else {
                     console.error("Element #calendarContainer not found");
                 }

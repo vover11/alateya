@@ -56,9 +56,8 @@ function renderCalendar(year, month) {
 
         // Устанавливаем стили для субботы и воскресенья
         if (currentDayOfWeek === 0 || currentDayOfWeek === 6) { // 0 - Воскресенье, 6 - Суббота
-            dayElement.classList.add('bg-error'); // Используем bg-error для фона выходных
             dayElement.classList.remove('text-white'); // Убираем белый текст
-            dayElement.classList.add('text-white'); // Оставляем белый текст для контраста на красном фоне
+            dayElement.classList.add('text-error'); // Оставляем белый текст для контраста на красном фоне
         }
 
         // Добавляем событие для выбора дня
@@ -74,11 +73,11 @@ function renderCalendar(year, month) {
 
             // Убираем выделение с предыдущего выбранного дня
             if (selectedDayElement) {
-                selectedDayElement.classList.remove('bg-primary');
+                selectedDayElement.classList.remove('bg-accent');
             }
 
             // Применяем стили к текущему выбранному дню
-            dayElement.classList.add('bg-primary', 'text-white');
+            dayElement.classList.add('bg-accent', 'text-white');
             selectedDayElement = dayElement; // Обновляем текущий выбранный элемент
         });
 

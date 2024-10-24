@@ -48,15 +48,17 @@ function renderCalendar(year, month) {
     // Добавляем числа дней месяца
     for (let i = 1; i <= daysInMonth; i++) {
         const dayElement = document.createElement('div');
-        dayElement.className = ' text-white rounded-full p-2 border border-gray-300 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center cursor-pointer';
+        dayElement.className = 'text-white rounded-full p-2 border border-gray-300 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center cursor-pointer';
         dayElement.textContent = i;
 
         // Определяем день недели для текущего дня
         const currentDayOfWeek = new Date(year, month, i).getDay();
 
-        // Устанавливаем красный цвет для субботы и воскресенья
+        // Устанавливаем стили для субботы и воскресенья
         if (currentDayOfWeek === 0 || currentDayOfWeek === 6) { // 0 - Воскресенье, 6 - Суббота
-            dayElement.classList.add('text-error'); // добавьте класс для красного цвета
+            dayElement.classList.add('bg-error'); // Используем bg-error для фона выходных
+            dayElement.classList.remove('text-white'); // Убираем белый текст
+            dayElement.classList.add('text-white'); // Оставляем белый текст для контраста на красном фоне
         }
 
         // Добавляем событие для выбора дня
@@ -72,7 +74,7 @@ function renderCalendar(year, month) {
 
             // Убираем выделение с предыдущего выбранного дня
             if (selectedDayElement) {
-                selectedDayElement.classList.remove('bg-primary', );
+                selectedDayElement.classList.remove('bg-primary');
             }
 
             // Применяем стили к текущему выбранному дню
